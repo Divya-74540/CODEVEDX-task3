@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+    135deg,
+    #020617,
+    #0f172a,
+    #1e293b
+    );
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.calculator{
+
+    width:380px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:25px;
+
+    padding:25px;
+
+    box-shadow:
+    0 0 25px rgba(59,130,246,.2);
+
+}
+
+.calculator h2{
+    text-align:center;
+    color:white;
+    margin-bottom:20px;
+    letter-spacing:2px;
+}
+
+#display{
+
+    width:100%;
+    height:80px;
+
+    border:none;
+    outline:none;
+
+    border-radius:15px;
+
+    padding:15px;
+
+    font-size:2rem;
+
+    text-align:right;
+
+    background:#111827;
+
+    color:#38bdf8;
+
+    margin-bottom:20px;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+button{
+
+    height:70px;
+
+    border:none;
+
+    border-radius:15px;
+
+    font-size:1.2rem;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:#1f2937;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 15px rgba(56,189,248,.5);
+}
+
+.operator{
+
+    background:#2563eb;
+}
+
+.equal{
+
+    background:#06b6d4;
+}
+
+.equal:hover{
+
+    box-shadow:
+    0 0 20px #06b6d4;
+}
+
+@media(max-width:450px){
+
+    .calculator{
+        width:95%;
+    }
+
+}
+
+.light-mode {
+    background: linear-gradient(
+        135deg,
+        #f8fafc,
+        #e2e8f0,
+        #cbd5e1
+    );
+}
+
+.light-mode .calculator {
+    background: rgba(255,255,255,0.9);
+}
+
+.light-mode .calculator h2 {
+    color: #111827;
+}
+
+.light-mode #display {
+    background: #ffffff;
+    color: #2563eb;
+}
+
+.light-mode button {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.light-mode .operator {
+    background: #3b82f6;
+    color: white;
+}
+
+.light-mode .equal {
+    background: #06b6d4;
+    color: white;
+}
